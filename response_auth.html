@@ -1,0 +1,15 @@
+<script src='/include/js/jquery-1.11.2.min.js'></script><script src='/include/js/bootstrap.js'></script><script src='/include/js/messagebox.js'></script><link rel='stylesheet' href='/include/css/bootstrap.min.3.3.2.css' /><link rel='stylesheet' href='/include/css/font-awesome.css' /><script> window.location.href='https://escritorio.acepta.com/ext.php?r=https://escritorio.acepta.com/dashboard%3Fapp_dinamica=dashboard%26session_id=00664ae17c21371019b4a1c1867575aa3c817031641%26rutUsuario=15958915%26rutCliente=76467151%26aplicacion=DTE%26%26inicio=%26mensaje_pantalla='</script><script>
+    $(function(){
+        $("#btn_close_modalerror, .close,#btn_close_modal666, #btn_close_loginincompleto").click(function(){
+            window.location.replace('index.php');
+        });
+    });
+function showSpinner(){
+    document.getElementById("background_loading").style.display = 'block';
+}
+hideSpinner = function() {
+    document.getElementById("background_loading").style.display = 'none';
+};
+</script>
+<body><div id="messagebox_container"></div></body>
+<div id="background_loading" hidden style="width:100vw; height:100vh; z-index:9998; background-color: rgba(116, 120, 121, 0.3); position:absolute;"></div>
