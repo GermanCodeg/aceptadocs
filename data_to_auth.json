@@ -1,0 +1,6 @@
+  {
+      'LoginForm[rut]': 'username',
+      'LoginForm[password]': 'password',
+      'resp_recatpcha': '',
+      'g-recaptcha-response': ''
+  }
