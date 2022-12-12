@@ -1,0 +1,65 @@
+<input type="hidden" id="flag_paginacion_grilla_ac4_empresas" value="SI"><input type="hidden" id="flag_paginacion_manual_grilla_ac4_empresas" value="NO"><input type="hidden" name="total_regs_grilla_ac4_empresas" id="total_regs_grilla_ac4_empresas" value=""><input type="hidden" id="offset_grilla_ac4_empresas" value="0"><input type="hidden" name="__hash__grilla_ac4_empresas" id="__hash__grilla_ac4_empresas" value=""><input type="hidden" id="form_respuesta_grilla_ac4_empresas" value="null"><div class="row" style="margin-left:3%;margin-right:3%;"><div class='botoneraTablaDinamica col-xs-12'><div class="col-xs-12 col-sm-2"></div></div><br /><table id="tabla_grilla_ac4_empresas" data-filter="#filter" class="table table-striped table-bordered dt-responsive nowrap" style="text-align: center;font-size :13px;"><thead><tr><center><th name="--NUM--" data-type="numeric" data-class="expand" data-sort-initial="true">N°</th><th name="--EDIT--"  class="hide" >Edit</th><th  name="APLICACION" style="white-space: nowrap;" >APLICACION </th><th  name="RUT_EMPRESA" style="white-space: nowrap;" >RUT EMPRESA </th><th  name="EMPRESA" style="white-space: nowrap;" >EMPRESA </th><th  name="PERFIL" style="white-space: nowrap;" >PERFIL </th><th  name="" style="white-space: nowrap;" > </th></center></tr></thead><tbody><script>$(function (){$("body").on("click",".editdrop",function(e){  $(this).on("select2:select", function (e) { console.log(e);  $("#"+e.target.id).val( e.params.data.text);$("#"+e.target.id).attr("id1",e.params.data.id);$(document).trigger("select2_id1",[e.target.id]);  }) });});</script><script>
+			$(document).ready(function(){
+				$('[data-toggle="popover"]').popover({trigger: "manual"/*,"placement": "bottom"*/, html: true, container: "body", animation:false}).on("mouseenter", function () {
+					var _this = this;
+					$(this).popover("show");
+					$(".popover").on("mouseleave", function () {
+						$(_this).popover("hide");
+					});
+				}).on("mouseleave", function () {
+					var _this = this;
+					setTimeout(function () {
+						if (!$(".popover:hover").length) {
+							$(_this).popover("hide");
+						}
+					}, 300);
+				});
+			});
+			</script><tr name="0" id="0"><td name="1" >1</td><td id="__edit__0" class="hide">NO</td><td data-campo="aplicacion" name="DTE"style="white-space: nowrap;">DTE</td><td data-campo="rut_empresa" name="76.467.151-1"><a target="_blank" href="https://escritorio.acepta.com/multirut.php?rutCliente=76467151&idSession=00664ae17c21371019b4a1c1867575aa3c817031641&aplicacion=DTE&">76.467.151-1</a></td><td data-campo="empresa" name="JUGOS RÚSTICOS SPA"style="white-space: nowrap;">JUGOS RÚSTICOS SPA</td><td data-campo="perfil" name="Admin"style="white-space: nowrap;">Admin</td><td><div class="dropdown btn-group" id="dropdown"><button name="color" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Gestion" aria-expanded="true"><span class="fa fa-bars"></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="menu1"><li><a id="1Agregar_Cargogrilla_ac4_empresas" role="menuitem" tabindex="-1"  href="" onclick='grilla_ac4_empresas.createEditModal("1Agregar_Cargogrilla_ac4_empresas",{"titulo":"Agregar Cargo","valor":"Agregar Cargo","funcion":"grilla_ac4_empresas.createEditModal","funcion_modal":"grilla_ac4_empresas.sendEditFormTX","tx":"add_edit_cargo_usuario","labels_no_editable":["APLICACION","RUT_EMPRESA"],"labels_editable":"","flag_masivo":"","id_modal":"add_edit_cargo_usuario","id1":"1Agregar_Cargogrilla_ac4_empresas"},"tabla_grilla_ac4_empresas", this)' data-toggle="modal" data-target="">Agregar Cargo</a></li></ul></div></td></tr><tr name="1" id="1"><td name="2" >2</td><td id="__edit__1" class="hide">NO</td><td data-campo="aplicacion" name="MARKETPLACE"style="white-space: nowrap;">MARKETPLACE</td><td data-campo="rut_empresa" name="1-0"><a target="_blank" href="https://escritorio.acepta.com/multirut.php?rutCliente=1&idSession=00664ae17c21371019b4a1c1867575aa3c817031641&aplicacion=MARKETPLACE&">1-0</a></td><td data-campo="empresa" name="Market Place"style="white-space: nowrap;">Market Place</td><td data-campo="perfil" name="MarketPlace"style="white-space: nowrap;">MarketPlace</td><td></td></tr></tbody></table><input type="hidden" id="indexes_grilla_ac4_empresas" value=""><input type="hidden" id="offset_grilla_ac4_empresas" value=""><input type="hidden" name="total_regs_grilla_ac4_empresas" id="total_regs_grilla_ac4_empresas" value=""><input type="hidden" id="columnas_off" value=""columns": [{ type:"num" },{ className:"hidden" },null,null,null,null,null]"><script>$(document).ready(function(){$("#tabla_grilla_ac4_empresas").dataTable( {
+	"iDisplayLength": 25,
+	"aLengthMenu": [10,25,50,100], 
+	"language": {"decimal": ",","thousands": ".","url": "//cdn.datatables.net/plug-ins/e9421181788/i18n/Spanish.json"},
+	"order": [[ 0, "asc" ]],"columns": [{ type:"num" },{ className:"hidden" },null,null,null,null,null],
+	"fnInitComplete": function (oSettings, json) { $("#tabla_grilla_ac4_empresas").removeAttr( "hidden" ); if($("#flag_paginacion_manual").val()==="SI"){ $(".paginate_button").css({"display": "none"}); $(".dataTables_info").css({"display": "none"}); $(".dataTables_length").css({"display": "none"}); } },
+	"bPaginate": true,
+	"bFilter": true,
+	"bInfo": true,
+	"bLengthChange": true
+	} ); $("#tabla_grilla_ac4_empresas").find(".dataTables_length").hide();grilla_ac4_empresas.LoadIndexes();$("body").on("click", ".todosChk_grilla_ac4_empresas", function(evento){
+			evento.stopPropagation();
+			/*
+			if(this.checked) {
+				$(this).closest("table").find(".chkClass_grilla_ac4_empresas").each(function(){
+					this.checked = true;
+				});
+			}else{
+				$(this).closest("table").find(".chkClass_grilla_ac4_empresas").each(function() {
+					this.checked = false;
+				});
+			}*/
+			// fix para que solo se marquen de la columna del checkbox y los que no estan deshabilitados - HBR 20170904
+			var th_index = $(this).closest("th").index();
+			if(this.checked) {
+				$(this).closest("table").find(".chkClass_grilla_ac4_empresas").each(function(){
+				if($(this).closest("td").index() == th_index && $(this).prop("disabled") != true)
+					this.checked = true;
+				});
+			}else{
+				$(this).closest("table").find(".chkClass_grilla_ac4_empresas").each(function() {
+				if($(this).closest("td").index() == th_index && $(this).prop("disabled") != true)
+					this.checked = false;
+				});
+			}
+		});var table = document.getElementById("tabla_grilla_ac4_empresas"); var rowLength = table.rows[0].cells.length; var indexes = new Object(); var aux =""; for(var i=0; i<rowLength; i+=1){ aux=(table.rows[0].cells[i].getAttribute("name")).replace(" ","_"); indexes[aux]=i;} $("#indexes_grilla_ac4_empresas").attr("value",JSON.stringify(indexes));var check_responsive_contador = 0;
+	var check_responsive = setInterval(function(){
+	if($("#tabla_grilla_ac4_empresas").hasClass("dtr-inline collapsed")){
+		if($("#tabla_grilla_ac4_empresas").find("thead th:visible").length <= 3){
+			$("#tabla_grilla_ac4_empresas").find("td.expand").trigger("click");
+			clearInterval(check_responsive);
+		}
+	}
+	if(check_responsive_contador == 20){
+		clearInterval(check_responsive);
+	}
+	check_responsive_contador++;
+	},300);});</script></div></div>
