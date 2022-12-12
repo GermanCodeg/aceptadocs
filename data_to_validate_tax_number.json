@@ -1,0 +1,12 @@
+{
+    'uri_comun': 'https://escritorio.acepta.com',
+    'step_dinamico': '-1',
+    'app_dinamica': 'ac4_empresas',
+    'aplicacion': 'DTE',
+    'div_dinamico': 'grilla_ac4_empresas',
+    'session_id': 'session_id',
+    'rutUsuario': 'username',
+    'rutCliente': 'tax_number[:-1]',
+    'uri_params': 'https://escritorio.acepta.com/appDinamicaClasses/index.php%3Fapp_dinamica=perfil_usuario_d%26session_id={session_id}%26rutUsuario={tax_number}%26rutCliente=1%26',
+    'current_url': 'https://escritorio.acepta.com/ext.php?r=https://escritorio.acepta.com/appDinamicaClasses/index.php%3Fapp_dinamica=perfil_usuario_d%26session_id={session_id}%26rutUsuario={tax_number}%26rutCliente=1%26',
+}
